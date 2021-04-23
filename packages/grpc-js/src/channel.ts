@@ -170,11 +170,6 @@ export class ChannelImplementation implements Channel {
     if (typeof target !== 'string') {
       throw new TypeError('Channel target must be a string');
     }
-    if (!(credentials instanceof ChannelCredentials)) {
-      throw new TypeError(
-        'Channel credentials must be a ChannelCredentials object'
-      );
-    }
     if (options) {
       if (
         typeof options !== 'object' ||
